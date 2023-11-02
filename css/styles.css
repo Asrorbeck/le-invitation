@@ -1,5 +1,6 @@
 body {
-  background-color: #F8F8F8;
+  background-image: url('../img/TEXTURE.png');
+  background-size: contain;
   font-family: 'GillSans';
   overflow-x: hidden;
   position: relative;
@@ -991,9 +992,8 @@ img {
 
 @media (max-width: 500px) {
   .container {
-    max-width: 480px;
-    padding-left: 10px;
-    padding-right: 10px;
+    max-width: 500px;
+    padding: 0;
   }
 
   .hero::before {
@@ -1192,7 +1192,7 @@ img {
 
   .adres__subheader-first {
     font-size: 15px;
-    max-width: 130px;
+    max-width: 150px;
     line-height: 15px;
     margin-bottom: 20px;
   }
@@ -1301,6 +1301,582 @@ img {
 
   .program__event {
     font-size: 13px;
+    line-height: 21px;
+  }
+
+  .program__item::after {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #E9A7A2;
+    right: calc(0% + 12px);
+    top: calc(50% - 40px);
+  }
+
+  .program__item:nth-child(2n)::after {
+    left: calc(0% + 13px);
+  }
+
+  .bg-flower-1 {
+    width: 212px;
+  }
+
+
+  .dress {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .dress__header {
+    font-size: 29px;
+    line-height: 15px;
+    margin-bottom: 25px;
+  }
+
+  .dress__body {
+    max-width: 218px;
+    font-size: 15px;
+    line-height: 14px;
+  }
+
+  .dress__list {
+    max-width: 211px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .dress__item {
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+  }
+
+  .dress__item:nth-child(1) {
+    background-color: #fff;
+    border: 8px solid #383838;
+    opacity: 0.1;
+  }
+
+  .dress__item:nth-child(2) {
+    background-color: #E9A7A2;
+  }
+
+  .dress__item:nth-child(3) {
+    background-color: #767575;
+  }
+
+  .dress__item:nth-child(4) {
+    background-color: #383838;
+  }
+
+  .dress__wrapper {
+    max-width: 200px;
+    width: 100%;
+  }
+
+  .dress__men {
+    max-width: 73px;
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .dress__men::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 63px;
+    height: 63px;
+    background-image: url('../img/men.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    left: calc(50% - 30px);
+    top: calc(50% + 55px);
+  }
+
+  .dress__men:nth-child(2)::after {
+    background-image: url('../img/women.png');
+  }
+
+  /* /////////////////////////////// */
+
+  .footer {
+    margin-bottom: 60px;
+  }
+
+  .footer::after {
+    width: 360px;
+    height: 310px;
+    background-image: url('../img/footer-flower.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: calc(100% - 100px);
+  }
+
+  .footer__subheader {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 13px;
+  }
+
+  .footer__header {
+    font-size: 29px;
+    line-height: 29px;
+    margin-bottom: 54px;
+  }
+
+  .footer__pechat {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 15px;
+  }
+
+  .footer__img {
+    width: 27px;
+  }
+
+
+  .adres__map-wrapper {
+    font-size: 13px;
+  }
+
+  .program__footer-text {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .dress__wrapper {
+    margin-bottom: 200px;
+  }
+
+  .dress__footer-text {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form__img {
+    max-width: 180px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .form__header {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .form__subheader {
+    font-size: 12px;
+  }
+
+  .form__list {
+    max-width: 250px;
+  }
+
+  .form__time {
+    font-size: 25px;
+    line-height: 20px;
+  }
+
+  .form__body {
+    font-size: 10px;
+    margin-bottom: 40px;
+  }
+
+  .form__footer {
+    font-size: 13px;
+    max-width: 200px;
+    margin-bottom: 30px;
+  }
+
+  .form__input {
+    width: 220px;
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+
+  .form__input-name,
+  .form__yesno {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .form__yesno-label {
+    font-size: 13px;
+    color: #5F5F5F80;
+  }
+
+  .form__yesno-wrapper {
+    margin-bottom: 3px;
+  }
+
+  .form__control,
+  .form__wish-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form__submit {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .yakun__body {
+    font-size: 13px;
+    max-width: 120px;
+    margin-bottom: 30px;
+  }
+
+  .yakun__line {
+    height: 1px;
+    margin-bottom: 50px;
+  }
+
+  .yakun__subheader {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .yakun__header {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .yakun::after {
+    width: 280px;
+    top: calc(0% + 250px);
+    height: 140px;
+  }
+
+  .yakun__name {
+    margin-top: 200px;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .yakun__list {
+    max-width: 160px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    max-width: 450px;
+    padding: 0;
+  }
+
+  .hero::before {
+    width: 410px;
+    height: 410px;
+    background-size: 410px 410px;
+  }
+
+  .navbar__logo {
+    font-size: 30px;
+  }
+
+  .hero {
+    margin-top: 250px;
+    margin-bottom: 0;
+  }
+
+  .form__input {
+    width: 400px;
+    padding: 5px 10px;
+  }
+
+  .footer::after {
+    width: 500px;
+  }
+
+  .yakun::after {
+    width: 400px;
+  }
+
+  .calendar__wrapper::before {
+    left: 0%;
+    bottom: 0%;
+  }
+
+  .calendar__wrapper::after {
+    width: 40px;
+    height: 40px;
+    top: calc(50% + 40px);
+    left: calc(50% + 105px);
+  }
+
+  .calendar__img {
+    width: 400px;
+  }
+
+  .program__item::after {
+    right: calc(0% - 175px);
+  }
+
+  .program__item:nth-child(2n)::after {
+    left: calc(0% - 172px);
+  }
+
+  .program__list {
+    max-width: 480px;
+  }
+
+  .container {
+    width: 360px;
+    padding: 0;
+  }
+
+  .hero__header {
+    font-size: 27px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+
+  .invit__header {
+    font-size: 19px;
+    margin-top: 28px;
+    color: #5F5F5F80;
+    margin-bottom: 25px;
+  }
+
+  .invit__body {
+    width: 246px;
+    font-size: 13px;
+    color: #5F5F5F80;
+    line-height: 18px;
+  }
+
+  .photo {
+    margin-top: 21px;
+    margin-bottom: 200px;
+  }
+
+  .photo__img {
+    width: 270px;
+  }
+
+  .photo::after {
+    width: 342px;
+    height: 163px;
+    background-image: url('../img/flower.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: calc(100% - 40px);
+  }
+
+  .date {
+    margin-bottom: 32px;
+  }
+
+  .date__wrapper {
+    position: relative;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .date__header {
+    font-family: 'GillSansLight';
+    font-size: 14px;
+    color: #5F5F5F80;
+    line-height: 15px;
+    margin-bottom: 5px;
+  }
+
+  .date__subheader {
+    font-family: 'GillSansLight';
+    font-size: 9px;
+    color: #5F5F5F80;
+    line-height: 15px;
+  }
+
+  .date__wrapper::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 72px;
+    height: 72px;
+    background-image: url('../img/barg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: calc(0% + 30px);
+    top: calc(0% + 35px);
+  }
+
+  .date__wrapper::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 41px;
+    height: 41px;
+    background-image: url('../img/LEAVES\ лепесток.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: calc(0% + 50px);
+    bottom: calc(0% - 80px);
+  }
+
+  .month {
+    font-size: 28px;
+    line-height: 21px;
+    margin-bottom: 15px;
+  }
+
+  .week__list {
+    max-width: 276px;
+    width: 100%;
+  }
+
+  .week__item-body {
+    font-family: 'GillSans';
+    font-size: 15px;
+    line-height: 15px;
+    color: #5F5F5F80;
+  }
+
+  .calendar__img {
+    width: 265px;
+  }
+
+  .line {
+    max-width: 280px;
+    width: 100%;
+  }
+
+  .calendar__wrapper::before {
+    width: 224px;
+    height: 206px;
+    background-image: url('../img/bgc-leaf.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: calc(50% - 120px);
+    bottom: calc(0% - 30px);
+  }
+
+  .adres {
+    margin-bottom: 70px;
+  }
+
+  .adres__subheader-first {
+    font-size: 15px;
+    max-width: 150px;
+    line-height: 15px;
+    margin-bottom: 20px;
+  }
+
+  .adres__header {
+    font-size: 25px;
+    line-height: 25px;
+    max-width: 160px;
+    margin-bottom: 23px;
+  }
+
+  .adres__line {
+    outline: none;
+    background-color: #5F5F5F80;
+    height: 1px;
+    max-width: 156px;
+    width: 100%;
+  }
+
+  .adres__subheader-second {
+    font-size: 15px;
+    max-width: 250px;
+    line-height: 15px;
+    margin-top: 30px;
+    margin-bottom: 33px;
+  }
+
+  .google__adres {
+    width: 285px;
+  }
+
+  .program {
+    margin-bottom: 30px;
+  }
+
+  .program__header {
+    font-size: 29px;
+    line-height: 29px;
+    max-width: 153px;
+    margin-bottom: 40px;
+  }
+
+  .program__list {
+    max-width: 400px;
+  }
+
+  .program__list::after {
+    width: 1px;
+    height: 330px;
+    background-color: #E9A7A2;
+    top: calc(0% + 75px);
+    left: 50%;
+  }
+
+  .program__item:nth-child(2n) {
+    margin-left: 160px;
+  }
+
+  .program__item:nth-child(2n-1) {
+    margin-right: 160px;
+  }
+
+  .program__item:nth-child(1) {
+    margin-top: 80px;
+  }
+
+  .program__item::before {
+    width: 95px;
+    height: 70px;
+    background-image: url('../img/kuyov.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    top: calc(50% - 105px);
+  }
+
+  .program__item:nth-child(3)::before {
+    background-image: url('../img/uzuk.png');
+    width: 87px;
+    height: 66px;
+    top: calc(50% - 105px);
+  }
+
+  .program__item:nth-child(2)::before {
+    background-image: url('../img/foto.png');
+    width: 80px;
+    height: 54px;
+    top: calc(50% - 85px);
+  }
+
+  .program__item:nth-child(4)::before {
+    background-image: url('../img/kelin.png');
+    width: 54px;
+    height: 84px;
+    top: calc(50% - 110px);
+  }
+
+  .program__item {
+    margin-top: 60px;
+  }
+
+  .program__time {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .program__event {
+    font-size: 18px;
     line-height: 21px;
   }
 
