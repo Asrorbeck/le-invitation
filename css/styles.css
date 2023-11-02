@@ -1008,6 +1008,7 @@ img {
 
   .hero {
     margin-bottom: 0;
+    padding-bottom: 200px;
   }
 
   .form__input {
@@ -1583,7 +1584,7 @@ img {
 
   .hero {
     margin-top: 250px;
-    margin-bottom: 0;
+    margin-bottom: 100px;
   }
 
   .form__input {
@@ -2167,6 +2168,7 @@ img {
   .hero {
     margin-top: 280px;
     margin-bottom: 0px;
+    padding-bottom: 200px;
   }
 
   .invit__header {
@@ -2555,9 +2557,10 @@ img {
   }
 
   .program__footer-text {
-    font-size: 13px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    max-width: 360px;
+    font-size: 11px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .dress__wrapper {

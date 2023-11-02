@@ -41,3 +41,19 @@
     transform: rotate(45deg) translate(20px, 20px);
   }
 }
+
+
+@media (max-width: 500px) {
+  .arrow span {
+    border-bottom: 3px solid #E9A7A2;
+    border-right: 3px solid #E9A7A2;
+  }
+}
+
+@media (max-width: 450px) {}
+
+@media (max-width: 360px) {
+  .arrow {
+    top: calc(50% + 110px);
+  }
+}
