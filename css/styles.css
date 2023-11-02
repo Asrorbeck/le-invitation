@@ -363,6 +363,7 @@ img {
   background-color: #E9A7A2;
   transition: 0.3s ease;
   cursor: pointer;
+  margin-top: 15px;
 }
 
 .adres__map-wrapper:hover {
