@@ -383,8 +383,9 @@ img {
 
 .adres__line {
   outline: none;
+  background: none;
   background-color: #5F5F5F80;
-  height: 1px;
+  height: 0.5px;
   max-width: 310px;
   width: 100%;
 }
@@ -429,9 +430,11 @@ img {
 }
 
 .program__line {
-  max-width: 300px;
+  max-width: 150px;
   width: 100%;
-  height: 1px;
+  height: 0.5px;
+  background: none;
+  border: none;
   background-color: #5F5F5F80;
 }
 
@@ -595,7 +598,7 @@ img {
 
 .dress__item:nth-child(1) {
   background-color: #fff;
-  border: 8px solid #383838;
+  border: 6px solid #383838;
   opacity: 0.1;
 }
 
@@ -997,9 +1000,9 @@ img {
   }
 
   .hero::before {
-    width: 350px;
-    height: 350px;
-    background-size: 350px 350px;
+    width: 450px;
+    height: 450px;
+    background-size: 450px 450px;
   }
 
   .navbar__logo {
@@ -1008,7 +1011,7 @@ img {
 
   .hero {
     margin-bottom: 0;
-    padding-bottom: 200px;
+    padding-bottom: 350px;
   }
 
   .form__input {
@@ -1205,14 +1208,6 @@ img {
     margin-bottom: 23px;
   }
 
-  .adres__line {
-    outline: none;
-    background-color: #5F5F5F80;
-    height: 1px;
-    max-width: 156px;
-    width: 100%;
-  }
-
   .adres__subheader-second {
     font-size: 15px;
     max-width: 250px;
@@ -1337,7 +1332,7 @@ img {
   .dress__body {
     max-width: 218px;
     font-size: 15px;
-    line-height: 14px;
+    line-height: 24px;
   }
 
   .dress__list {
@@ -1355,7 +1350,7 @@ img {
 
   .dress__item:nth-child(1) {
     background-color: #fff;
-    border: 8px solid #383838;
+    border: 3px solid #383838;
     opacity: 0.1;
   }
 
@@ -1407,12 +1402,12 @@ img {
   }
 
   .footer::after {
-    width: 360px;
+    width: 480px;
     height: 310px;
     background-image: url('../img/footer-flower.png');
     background-repeat: no-repeat;
     background-size: contain;
-    top: calc(100% - 100px);
+    top: calc(100% - 140px);
   }
 
   .footer__subheader {
@@ -1490,7 +1485,7 @@ img {
 
   .form__footer {
     font-size: 13px;
-    max-width: 200px;
+    max-width: 300px;
     margin-bottom: 30px;
   }
 
@@ -1535,7 +1530,8 @@ img {
   }
 
   .yakun__line {
-    height: 1px;
+    height: 0.5px;
+    border: none;
     margin-bottom: 50px;
   }
 
@@ -1701,27 +1697,15 @@ img {
   }
 
   .date__wrapper::before {
-    position: absolute;
-    display: inline-block;
-    content: "";
     width: 72px;
     height: 72px;
-    background-image: url('../img/barg.png');
-    background-size: contain;
-    background-repeat: no-repeat;
     left: calc(0% + 30px);
     top: calc(0% + 35px);
   }
 
   .date__wrapper::after {
-    position: absolute;
-    display: inline-block;
-    content: "";
     width: 41px;
     height: 41px;
-    background-image: url('../img/LEAVES\ лепесток.png');
-    background-repeat: no-repeat;
-    background-size: contain;
     right: calc(0% + 50px);
     bottom: calc(0% - 80px);
   }
@@ -1779,14 +1763,6 @@ img {
     line-height: 25px;
     max-width: 160px;
     margin-bottom: 23px;
-  }
-
-  .adres__line {
-    outline: none;
-    background-color: #5F5F5F80;
-    height: 1px;
-    max-width: 156px;
-    width: 100%;
   }
 
   .adres__subheader-second {
@@ -1913,7 +1889,7 @@ img {
   .dress__body {
     max-width: 218px;
     font-size: 15px;
-    line-height: 14px;
+    line-height: 23px;
   }
 
   .dress__list {
@@ -1931,7 +1907,7 @@ img {
 
   .dress__item:nth-child(1) {
     background-color: #fff;
-    border: 8px solid #383838;
+    border: 3px solid #383838;
     opacity: 0.1;
   }
 
@@ -1983,12 +1959,12 @@ img {
   }
 
   .footer::after {
-    width: 360px;
+    width: 440px;
     height: 310px;
     background-image: url('../img/footer-flower.png');
     background-repeat: no-repeat;
     background-size: contain;
-    top: calc(100% - 100px);
+    top: calc(100% - 110px);
   }
 
   .footer__subheader {
@@ -2066,7 +2042,7 @@ img {
 
   .form__footer {
     font-size: 13px;
-    max-width: 200px;
+    max-width: 300px;
     margin-bottom: 30px;
   }
 
@@ -2111,7 +2087,8 @@ img {
   }
 
   .yakun__line {
-    height: 1px;
+    height: 0.5px;
+    border: none;
     margin-bottom: 50px;
   }
 
@@ -2149,26 +2126,20 @@ img {
     margin: 0;
   }
 
-  .hero__header {
-    font-size: 27px;
-    margin-top: 50px;
-    margin-bottom: 10px;
-  }
-
   .navbar__logo {
     font-size: 25px;
   }
 
   .hero::before {
-    width: 320px;
-    height: 320px;
-    background-size: 320px 320px;
+    width: 350px;
+    height: 350px;
+    background-size: 350px 350px;
   }
 
   .hero {
-    margin-top: 280px;
+    margin-top: 250px;
     margin-bottom: 0px;
-    padding-bottom: 200px;
+    padding-bottom: 250px;
   }
 
   .invit__header {
@@ -2320,14 +2291,6 @@ img {
     margin-bottom: 23px;
   }
 
-  .adres__line {
-    outline: none;
-    background-color: #5F5F5F80;
-    height: 1px;
-    max-width: 156px;
-    width: 100%;
-  }
-
   .adres__subheader-second {
     font-size: 15px;
     max-width: 250px;
@@ -2451,7 +2414,7 @@ img {
   .dress__body {
     max-width: 218px;
     font-size: 15px;
-    line-height: 14px;
+    line-height: 20px;
   }
 
   .dress__list {
@@ -2469,7 +2432,7 @@ img {
 
   .dress__item:nth-child(1) {
     background-color: #fff;
-    border: 8px solid #383838;
+    border: 2px solid #383838;
     opacity: 0.1;
   }
 
