@@ -1035,8 +1035,8 @@ img {
   .calendar__wrapper::after {
     width: 40px;
     height: 40px;
-    top: calc(50% + 40px);
-    left: calc(50% + 105px);
+    top: calc(50% + 60px);
+    left: calc(50% + 148px);
   }
 
   .calendar__img {
@@ -1114,7 +1114,7 @@ img {
 
   .date__header {
     font-family: 'GillSansLight';
-    font-size: 14px;
+    font-size: 20px;
     color: #5F5F5F80;
     line-height: 15px;
     margin-bottom: 5px;
@@ -1122,7 +1122,7 @@ img {
 
   .date__subheader {
     font-family: 'GillSansLight';
-    font-size: 9px;
+    font-size: 11px;
     color: #5F5F5F80;
     line-height: 15px;
   }
@@ -1154,13 +1154,13 @@ img {
   }
 
   .month {
-    font-size: 28px;
-    line-height: 21px;
+    font-size: 40px;
+    line-height: 23px;
     margin-bottom: 15px;
   }
 
   .week__list {
-    max-width: 276px;
+    max-width: 400px;
     width: 100%;
   }
 
@@ -1172,11 +1172,12 @@ img {
   }
 
   .calendar__img {
-    width: 265px;
+    max-width: 400px;
+    width: 100%;
   }
 
   .line {
-    max-width: 280px;
+    max-width: 450px;
     width: 100%;
   }
 
@@ -1187,7 +1188,7 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     left: calc(50% - 120px);
-    bottom: calc(0% - 30px);
+    bottom: calc(0% + 40px);
   }
 
   .adres {
@@ -1569,9 +1570,9 @@ img {
   }
 
   .hero::before {
-    width: 390px;
-    height: 390px;
-    background-size: 390px 390px;
+    width: 380px;
+    height: 380px;
+    background-size: 380px 380px;
   }
 
   .navbar__logo {
@@ -1712,7 +1713,7 @@ img {
   }
 
   .month {
-    font-size: 28px;
+    font-size: 35px;
     line-height: 21px;
     margin-bottom: 15px;
   }
@@ -1741,9 +1742,6 @@ img {
   .calendar__wrapper::before {
     width: 224px;
     height: 206px;
-    background-image: url('../img/bgc-leaf.png');
-    background-repeat: no-repeat;
-    background-size: contain;
     left: calc(50% - 120px);
     bottom: calc(0% + 20px);
   }
@@ -2260,9 +2258,6 @@ img {
   .calendar__wrapper::before {
     width: 224px;
     height: 206px;
-    background-image: url('../img/bgc-leaf.png');
-    background-repeat: no-repeat;
-    background-size: contain;
     left: calc(50% - 120px);
     bottom: calc(0% - 30px);
   }
