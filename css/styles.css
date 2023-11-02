@@ -1570,9 +1570,9 @@ img {
   }
 
   .hero::before {
-    width: 380px;
-    height: 380px;
-    background-size: 380px 380px;
+    width: 370px;
+    height: 370px;
+    background-size: 370px 370px;
   }
 
   .navbar__logo {
