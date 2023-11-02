@@ -155,7 +155,7 @@ img {
   background-image: url('../img/Group\ 1.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 600px 600px;
+  background-size: cover;
 }
 
 .invit {
@@ -1000,9 +1000,9 @@ img {
   }
 
   .hero::before {
-    width: 450px;
-    height: 450px;
-    background-size: 450px 450px;
+    width: 400px;
+    height: 400px;
+    background-size: 400px 400px;
   }
 
   .navbar__logo {
@@ -1569,9 +1569,9 @@ img {
   }
 
   .hero::before {
-    width: 410px;
-    height: 410px;
-    background-size: 410px 410px;
+    width: 380px;
+    height: 380px;
+    background-size: 380px 380px;
   }
 
   .navbar__logo {
