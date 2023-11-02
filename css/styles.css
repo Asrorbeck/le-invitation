@@ -10,6 +10,11 @@ html {
   scroll-behavior: smooth;
 }
 
+iframe {
+  max-width: 600px;
+  width: 100%;
+}
+
 h1,
 h2,
 h3,
