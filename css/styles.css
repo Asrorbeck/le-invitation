@@ -1,6 +1,8 @@
 body {
   background-color: #F8F8F8;
   font-family: 'GillSans';
+  overflow-x: hidden;
+  position: relative;
 }
 
 html {
@@ -143,21 +145,16 @@ img {
   color: #CFB89A;
 }
 
-#scaling-element {
-  transition: transform 5s ease;
-  transform: scale(1);
-}
-
 .hero::before {
   position: absolute;
   display: inline-block;
   content: "";
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
   background-image: url('../img/Group\ 1.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 500px 500px;
+  background-size: 600px 600px;
 }
 
 .invit {
@@ -967,9 +964,12 @@ img {
 
 .navbar__btn {
   display: flex;
+  position: fixed;
   color: #fff;
   background: none;
   border: none;
+  bottom: 20px;
+  right: 20px;
   cursor: pointer;
   border-radius: 10px;
   justify-content: flex-end;
@@ -1008,11 +1008,6 @@ img {
 
   .hero {
     margin-bottom: 0;
-  }
-
-  .hero__img {
-    max-width: 400px;
-    margin-bottom: 50px;
   }
 
   .form__input {
@@ -1588,17 +1583,14 @@ img {
   }
 
   .hero::before {
-    width: 250px;
-    height: 250px;
-    background-size: 250px 250px;
+    width: 320px;
+    height: 320px;
+    background-size: 320px 320px;
   }
 
   .hero {
-    margin-bottom: 30px;
-  }
-
-  .hero__img {
-    width: 300px;
+    margin-top: 280px;
+    margin-bottom: 0px;
   }
 
   .invit__header {

@@ -66,10 +66,3 @@ musicControl.addEventListener("click", function () {
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  const elementToScale = document.getElementById("scaling-element");
-  
-  setTimeout(function() {
-      elementToScale.style.transform = "scale(1.1)";
-  }, 1000); // 1000 milliseconds = 1 second
-});
