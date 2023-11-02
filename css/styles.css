@@ -1964,7 +1964,7 @@ img {
   }
 
   .footer::after {
-    width: 440px;
+    width: 410px;
     height: 310px;
     background-image: url('../img/footer-flower.png');
     background-repeat: no-repeat;
