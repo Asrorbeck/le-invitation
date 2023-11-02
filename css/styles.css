@@ -1569,9 +1569,9 @@ img {
   }
 
   .hero::before {
-    width: 380px;
-    height: 380px;
-    background-size: 380px 380px;
+    width: 390px;
+    height: 390px;
+    background-size: 390px 390px;
   }
 
   .navbar__logo {
@@ -1579,8 +1579,9 @@ img {
   }
 
   .hero {
-    margin-top: 250px;
-    margin-bottom: 100px;
+    margin-top: 280px;
+    margin-bottom: 0px;
+    padding-bottom: 350px;
   }
 
   .form__input {
@@ -1604,8 +1605,8 @@ img {
   .calendar__wrapper::after {
     width: 40px;
     height: 40px;
-    top: calc(50% + 40px);
-    left: calc(50% + 105px);
+    top: calc(50% + 55px);
+    left: calc(50% + 135px);
   }
 
   .calendar__img {
@@ -1717,7 +1718,7 @@ img {
   }
 
   .week__list {
-    max-width: 276px;
+    max-width: 330px;
     width: 100%;
   }
 
@@ -1729,11 +1730,11 @@ img {
   }
 
   .calendar__img {
-    width: 265px;
+    width: 330px;
   }
 
   .line {
-    max-width: 280px;
+    max-width: 350px;
     width: 100%;
   }
 
@@ -1744,7 +1745,7 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     left: calc(50% - 120px);
-    bottom: calc(0% - 30px);
+    bottom: calc(0% + 20px);
   }
 
   .adres {
