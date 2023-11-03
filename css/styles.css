@@ -1751,7 +1751,7 @@ img {
 
   .adres__subheader-first {
     font-size: 15px;
-    max-width: 150px;
+    max-width: 250px;
     line-height: 15px;
     margin-bottom: 20px;
   }
@@ -1869,7 +1869,7 @@ img {
   }
 
   .bg-flower-1 {
-    width: 212px;
+    width: 300px;
   }
 
 
@@ -1879,7 +1879,7 @@ img {
   }
 
   .dress__header {
-    font-size: 29px;
+    font-size: 35px;
     line-height: 15px;
     margin-bottom: 25px;
   }
@@ -1996,6 +1996,7 @@ img {
     font-size: 13px;
     margin-top: 20px;
     margin-bottom: 20px;
+    max-width: 250px;
   }
 
   .dress__wrapper {
@@ -2057,7 +2058,7 @@ img {
   }
 
   .form__yesno-label {
-    font-size: 13px;
+    font-size: 16px;
     color: #5F5F5F80;
   }
 
@@ -2080,7 +2081,7 @@ img {
 
   .yakun__body {
     font-size: 13px;
-    max-width: 120px;
+    max-width: 170px;
     margin-bottom: 30px;
   }
 
@@ -2101,9 +2102,9 @@ img {
   }
 
   .yakun::after {
-    width: 280px;
-    top: calc(0% + 250px);
-    height: 140px;
+    width: 300px;
+    top: calc(0% + 215px);
+    height: 170px;
   }
 
   .yakun__name {
