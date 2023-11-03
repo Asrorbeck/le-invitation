@@ -2576,10 +2576,11 @@ img {
   }
 
   .footer::after {
-    width: 360px;
+    width: 330px;
     height: 310px;
     background-image: url('../img/footer-flower.png');
-    top: calc(100% - 100px)
+    top: calc(100% - 100px);
+    left: calc(0% + 15px);
   }
 
   .footer__subheader {
