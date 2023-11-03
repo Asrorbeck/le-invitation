@@ -91,6 +91,10 @@
   list-style: none;
   padding: 0;
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu li {
@@ -100,6 +104,8 @@
 .menu a {
   text-decoration: none;
   color: #5f5f5f;
+  font-size: 23px;
+  font-weight: 500;
 }
 
 .menu-open {
@@ -134,7 +140,7 @@
 .close-button {
   cursor: pointer;
   font-size: 24px;
-  color: white;
+  color: black;
   position: absolute;
   top: 10px;
   right: 10px;
