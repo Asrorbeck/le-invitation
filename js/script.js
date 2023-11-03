@@ -98,5 +98,10 @@ document.getElementById("openMaps").addEventListener("click", function () {
 
 // ////////////////////////////////////////////////////////
 
-
+function toggleMenu() {
+  var menu = document.querySelector('.menu');
+  var overlay = document.querySelector('.menu-overlay');
+  menu.classList.toggle('menu-open');
+  overlay.style.display = overlay.style.display === 'block' ? 'none' : 'block';
+}
 

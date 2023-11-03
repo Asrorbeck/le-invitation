@@ -968,21 +968,14 @@ img {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 
 .navbar__btn {
-  display: flex;
-  position: fixed;
-  color: #fff;
   background: none;
   border: none;
-  bottom: 20px;
-  right: 20px;
   cursor: pointer;
-  border-radius: 10px;
-  justify-content: flex-end;
 }
 
 

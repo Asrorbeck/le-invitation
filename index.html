@@ -15,8 +15,36 @@
   <main>
     <div class="container">
       <div class="navbar">
+        <div class="menu-button" onclick="toggleMenu()">
+          <span class="menu-icon">&#9776;</span>
+        </div>
+
         <a href="#" class="navbar__logo">TAKLIFNOMA</a>
+
+        <button id="navbar__btn" class="navbar__btn"><img width="20" id="music-icon" src="./img/mute.svg"
+            alt="mute music">
+        </button>
       </div>
+
+      <div class="menu-overlay" onclick="toggleMenu()"></div>
+
+      <div class="menu">
+        <div class="menu-header">
+          <span class="close-button" onclick="toggleMenu()">&times;</span>
+        </div>
+
+        <ul>
+
+          <li><a href="#">Home</a></li>
+
+          <li><a href="#">About</a></li>
+
+          <li><a href="#">Services</a></li>
+
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
 
       <div class="hero" data-aos="fade-up" data-aos-duration="3000">
         <h2 class="hero__header"></h2>
@@ -298,9 +326,7 @@
         </div>
       </div>
 
-      <button id="navbar__btn" class="navbar__btn"><img width="20" id="music-icon" src="./img/mute.svg"
-          alt="mute music">
-      </button>
+
 
     </div>
   </main>
