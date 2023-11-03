@@ -39,7 +39,6 @@ window.onload = function () {
 
 musicControl.addEventListener("click", function () {
   if (isPlaying) {
-    console.log('ok');
     audio.muted = false
     audio.play();
     musicIcon.src = "./img/unmute.svg";

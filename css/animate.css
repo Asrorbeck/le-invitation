@@ -81,12 +81,27 @@
     border-bottom: 3px solid #E9A7A2;
     border-right: 3px solid #E9A7A2;
   }
+
+  .modal-content {
+    border-radius: 8px;
+    margin: 50% auto;
+  }
 }
 
-@media (max-width: 450px) {}
+@media (max-width: 450px) {
+  .modal-content {
+    border-radius: 8px;
+    margin: 50% auto;
+  }
+}
 
 @media (max-width: 360px) {
   .arrow {
     top: calc(50% + 110px);
+  }
+
+  .modal-content {
+    border-radius: 8px;
+    margin: 50% auto;
   }
 }
