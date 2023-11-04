@@ -837,8 +837,7 @@ img {
   width: 1080px;
   height: 615px;
   background-image: url('../img/footer-flower.png');
-  top: calc(100% - 290px);
-  left: calc(0% + 100px);
+  background-position: center;
 }
 
 .footer__subheader {
@@ -1508,8 +1507,6 @@ img {
     width: 480px;
     height: 310px;
     background-image: url('../img/footer-flower.png');
-    top: calc(100% - 140px);
-    left: calc(0% - 60px);
   }
 
   .footer__subheader {
@@ -2044,8 +2041,6 @@ img {
     width: 400px;
     height: 310px;
     background-image: url('../img/footer-flower.png');
-    top: calc(100% - 110px);
-    left: calc(0% - 20px);
   }
 
   .footer__subheader {
@@ -2579,8 +2574,6 @@ img {
     width: 330px;
     height: 310px;
     background-image: url('../img/footer-flower.png');
-    top: calc(100% - 100px);
-    left: calc(0% + 15px);
   }
 
   .footer__subheader {
