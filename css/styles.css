@@ -273,6 +273,7 @@ img {
 }
 
 .invit__header {
+  font-family: Vontgod;
   font-size: 35px;
   font-weight: 400;
   margin-top: 30px;
@@ -372,7 +373,7 @@ img {
 }
 
 .month {
-  font-family: Cataline;
+  font-family: Vontgod;
   font-size: 65px;
   line-height: 49px;
   color: #cfb89a;
@@ -507,7 +508,7 @@ img {
 }
 
 .adres__header {
-  font-family: GillSans-italic;
+  font-family: Vontgod;
   font-weight: 400;
   font-size: 39px;
   line-height: 40px;
@@ -553,7 +554,7 @@ img {
 }
 
 .program__header {
-  font-family: Cataline;
+  font-family: Vontgod;
   font-size: 66px;
   line-height: 66px;
   text-align: center;
@@ -716,7 +717,7 @@ img {
 }
 
 .dress__header {
-  font-family: Cataline;
+  font-family: Vontgod;
   font-size: 54px;
   line-height: 40px;
   color: #cfb89a;
@@ -1583,7 +1584,7 @@ img {
   }
 
   .form__input {
-    width: 220px;
+    width: 300px;
     padding: 10px 15px;
     font-size: 12px
   }
@@ -1719,15 +1720,15 @@ img {
   }
 
   .invit__header {
-    font-size: 23px;
+    font-size: 29px;
     margin-top: 28px;
     color: #5f5F5F80;
     margin-bottom: 15px
   }
 
   .invit__body {
-    width: 280px;
-    font-size: 15px;
+    width: 330px;
+    font-size: 20px;
     color: #5f5F5F80;
     line-height: 18px
   }
@@ -2070,10 +2071,10 @@ img {
   }
 
   .program__footer-text {
-    font-size: 13px;
+    font-size: 18px;
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 250px
+    max-width: 330px
   }
 
   .dress__wrapper {
@@ -2119,7 +2120,7 @@ img {
   }
 
   .form__input {
-    width: 220px;
+    width: 300px;
     padding: 10px 15px;
     font-size: 12px
   }
@@ -2142,7 +2143,7 @@ img {
   .form__submit,
   .yakun__body {
     margin-bottom: 30px;
-    font-size: 13px
+    font-size: 18px
   }
 
   .form__control,
@@ -2161,7 +2162,7 @@ img {
   }
 
   .yakun__body {
-    max-width: 170px
+    max-width: 330px
   }
 
   .yakun__line {
@@ -2603,7 +2604,7 @@ img {
   }
 
   .program__footer-text {
-    max-width: 360px;
+    max-width: 250px;
     font-size: 11px;
     margin-top: 15px;
     margin-bottom: 15px
@@ -2656,7 +2657,7 @@ img {
   }
 
   .form__input {
-    width: 220px;
+    width: 240px;
     padding: 10px 15px;
     font-size: 12px
   }
