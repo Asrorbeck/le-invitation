@@ -918,6 +918,22 @@ img {
   color: #5f5F5F80
 }
 
+.form__star {
+  position: relative;
+}
+
+.form__star::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-image: url('../img/star.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 .form__footer {
   max-width: 442px;
   width: 100%;
@@ -955,6 +971,7 @@ img {
 }
 
 .form__yesno {
+  display: block;
   font-size: 20px;
   line-height: 22px;
   color: #5f5F5F80;
@@ -1617,12 +1634,6 @@ img {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
   }
 
   .yakun__body {
@@ -1664,9 +1675,7 @@ img {
 
 @media (max-width:450px) {
 
-  .date__wrapper,
-  .form__control,
-  .form__wish-wrapper {
+  .date__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal
   }
@@ -1846,7 +1855,7 @@ img {
   }
 
   .adres__header {
-    font-size: 25px;
+    font-size: 30px;
     line-height: 25px;
     max-width: 160px;
     margin-bottom: 23px
@@ -2146,21 +2155,6 @@ img {
     font-size: 18px
   }
 
-  .form__control,
-  .form__wish-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
-  }
-
   .yakun__body {
     max-width: 330px
   }
@@ -2206,13 +2200,6 @@ img {
     position: absolute;
     display: inline-block;
     content: ""
-  }
-
-  .date__wrapper,
-  .form__control,
-  .form__wish-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal
   }
 
   .container {
@@ -2383,7 +2370,7 @@ img {
   }
 
   .adres__header {
-    font-size: 16px;
+    font-size: 25px;
     line-height: 16px;
     max-width: 108px;
     margin-bottom: 23px
@@ -2680,21 +2667,6 @@ img {
   .yakun__body {
     margin-bottom: 30px;
     font-size: 13px
-  }
-
-  .form__control,
-  .form__wish-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
   }
 
   .yakun__body {
