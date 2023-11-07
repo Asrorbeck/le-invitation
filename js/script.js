@@ -87,11 +87,15 @@ document.getElementById("openMaps").addEventListener("click", function () {
   // Replace this with the address you want to open in the mapping app
   const address = "Asia Palace";
 
-  // Check if the user is on a mobile device
-  if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+  if (/(android|iphone|ipad|ipod)/i.test(navigator.userAgent)) {
     // If on a mobile device, open the default mapping app
-    window.location.href = `geo:0,0?q=${encodeURIComponent(address)}`;
+    if (/iphone|ipad|ipod/i.test(navigator.userAgent)) {
+      window.location.href = `maps://maps.apple.com/?q=${encodeURIComponent(address)}`;
+    } else if (/android/i.test(navigator.userAgent)) {
+      window.location.href = `geo:0,0?q=${encodeURIComponent(address)}`;
+    }
   } else {
+    // If not on a mobile device, open Google Maps in a new tab
     window.open(`https://www.google.com/maps/search/${encodeURIComponent(address)}`);
   }
 });
