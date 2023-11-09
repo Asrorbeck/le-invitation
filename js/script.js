@@ -87,16 +87,28 @@ document.getElementById("openMaps").addEventListener("click", function () {
   // Replace this with the address you want to open in the mapping app
   const address = "Asia Palace";
 
+  // Determine which mapping app to open
+  let mappingApp;
   if (/(android|iphone|ipad|ipod)/i.test(navigator.userAgent)) {
     // If on a mobile device, open the default mapping app
-    if (/iphone|ipad|ipod/i.test(navigator.userAgent)) {
-      window.location.href = `maps://maps.apple.com/?q=${encodeURIComponent(address)}`;
-    } else if (/android/i.test(navigator.userAgent)) {
-      window.location.href = `geo:0,0?q=${encodeURIComponent(address)}`;
-    }
+    mappingApp = navigator.userAgent.match(/(android|iphone|ipad|ipod)/i)[1];
   } else {
     // If not on a mobile device, open Google Maps in a new tab
-    window.open(`https://www.google.com/maps/search/${encodeURIComponent(address)}`);
+    mappingApp = "Google Maps";
+  }
+
+  // Open the appropriate mapping app with the specified address
+  switch (mappingApp) {
+    case "Google Maps":
+      window.open(`https://www.google.com/maps/search/${encodeURIComponent(address)}`);
+      break;
+    case "Yandex Maps":
+      window.open(`https://yandex.com/maps/?text=${encodeURIComponent(address)}`);
+      break;
+    default:
+      // If no mapping app is found, open Google Maps as a fallback
+      window.open(`https://www.google.com/maps/search/${encodeURIComponent(address)}`);
+      break;
   }
 });
 
