@@ -84,21 +84,15 @@ function handleSubmit(event) {
 // ////////////////////////////////////////////////////
 
 document.getElementById("openMaps").addEventListener("click", function () {
-  // Replace this with the address you want to open in the mapping app
   const address = "Asia Palace";
 
-  // Check if the user is on a mobile device
   if (/(android|iphone|ipad|ipod)/i.test(navigator.userAgent)) {
-    // If on a mobile device, open the default mapping app
     if (/iphone|ipad|ipod/i.test(navigator.userAgent)) {
-      // Open Yandex Maps on iOS
       window.location.href = `https://maps.yandex.com/?text=${encodeURIComponent(address)}`;
     } else if (/android/i.test(navigator.userAgent)) {
-      // Open Yandex Maps on Android
       window.location.href = `https://yandex.com/maps/?text=${encodeURIComponent(address)}`;
     }
   } else {
-    // If not on a mobile device, open Google Maps in a new tab
     window.open(`https://www.google.com/maps/search/${encodeURIComponent(address)}`);
   }
 });
