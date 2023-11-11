@@ -86,16 +86,15 @@ function handleSubmit(event) {
 document.getElementById("openMaps").addEventListener("click", function () {
   const address = "Asia Palace";
 
-  if (/(android|iphone|ipad|ipod)/i.test(navigator.userAgent)) {
-    if (/iphone|ipad|ipod/i.test(navigator.userAgent)) {
-      window.location.href = `https://maps.yandex.com/?text=${encodeURIComponent(address)}`;
-    } else if (/android/i.test(navigator.userAgent)) {
-      window.location.href = `https://yandex.com/maps/?text=${encodeURIComponent(address)}`;
-    }
-  } else {
-    window.open(`https://www.google.com/maps/search/${encodeURIComponent(address)}`);
+  if (/iphone|ipad|ipod/i.test(navigator.userAgent)) {
+    // Open Yandex Maps on iOS
+    window.location.href = `https://maps.yandex.com/?text=${encodeURIComponent(address)}`;
+  } else if (/android/i.test(navigator.userAgent)) {
+    // Open Yandex Navigator on Android
+    window.location.href = `https://yandex.com/maps/?text=${encodeURIComponent(address)}`;
   }
 });
+
 
 
 // ////////////////////////////////////////////////////////
