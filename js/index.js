@@ -78,6 +78,7 @@ function handleSubmit(event) {
   const formData = new FormData(event.target);
   console.log("Form Data:", Object.fromEntries(formData));
   event.target.reset();
+  location.reload()
   alert("Sizning xabaringiz muvvaffaqiyatli yetkazildi!")
 }
 
