@@ -73,15 +73,6 @@ const countdown = setInterval(function () {
   }
 }, 1000);
 
-function handleSubmit(event) {
-  event.preventDefault();
-  const formData = new FormData(event.target);
-  console.log("Form Data:", Object.fromEntries(formData));
-  event.target.reset();
-  location.reload()
-  alert("Sizning xabaringiz muvvaffaqiyatli yetkazildi!")
-}
-
 // ////////////////////////////////////////////////////
 
 document.getElementById("openMaps").addEventListener("click", function () {

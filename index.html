@@ -268,7 +268,7 @@
           TASDIQLASANGIZ!
         </p>
 
-        <form onsubmit="handleSubmit(event)" class="form__control" data-aos="fade" data-aos-duration="3000">
+        <form onsubmit=" return sendTelegram()" class="form__control" data-aos="fade" data-aos-duration="3000">
           <div class="form__input-wrapper">
             <label class="form__input-name form__star" for="name">F.I.SH</label>
             <input required type="text" name="name" id="name" class="form__input" placeholder="Ismingizni kiriting...">
@@ -292,12 +292,12 @@
 
           <div class="form__main-wrapper">
             <div class="form__yesno-wrapper">
-              <input required class="label__yesno" type="radio" name="Kelishadimi" value="yes" id="yes">
+              <input required class="label__yesno" type="radio" name="Kelishadimi" value="Ha" id="Ha">
               <label class="form__yesno-label" for="type">Albatta, boraman</label>
             </div>
 
             <div class="form__yesno-wrapper">
-              <input required class="label__yesno" type="radio" name="Kelishadimi" value="no" id="no">
+              <input required class="label__yesno" type="radio" name="Kelishadimi" value="Yo'q" id="Yo'q">
               <label class="form__yesno-label" for="type">Afsuski, bora olmayman</label>
             </div>
           </div>
@@ -371,5 +371,6 @@
 </body>
 
 <script src="./js/index.js"></script>
+<script src="./js/telegram-bot.js"></script>
 
 </html>
