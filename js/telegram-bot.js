@@ -8,9 +8,8 @@ function sendTelegram() {
   // Replace 'YOUR_BOT_TOKEN' with your actual bot token
   var botToken = '6432229655:AAFqVUMu62qN0AFzpQih146WeA05xwuVveY';
 
-  // Replace 'YOUR_CHAT_ID' with your actual chat ID
-  var chatIds = ['905770018', '527662755', '683856751'];
-  // var chatId = '905770018';
+  // Replace 'YOUR_CHAT_IDS' with an array of your actual chat IDs
+  var chatIds = ['905770018', '527662755'];
 
   // Construct the message
   var message = `Ism: ${name}
@@ -24,35 +23,40 @@ Tilaklar: ${wish}`;
   // Telegram Bot API endpoint for sending messages
   var apiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
 
-  // Construct the data to be sent
-  var data = {
-    chat_id: chatIds.join(','),
-    text: message,
-  };
+  // Iterate through each chat ID and send the message
+  chatIds.forEach(chatId => {
+    // Construct the data to be sent
+    var data = {
+      chat_id: chatId,
+      text: message,
+    };
 
-  // Make a POST request to the Telegram Bot API
-  fetch(apiUrl, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(data),
-  })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Message sent:', data);
-      // You can handle the response here if needed
-      alert("Sizning ma'lumotlaringiz yozib olindi!");
-
-      // Clear the form
-      document.getElementById('name').value = '';
-      document.querySelector('input[name="whose"]:checked').checked = false;
-      document.querySelector('input[name="Kelishadimi"]:checked').checked = false;
-      document.getElementById('wish').value = '';
+    // Make a POST request to the Telegram Bot API
+    fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
     })
-    .catch(error => {
-      console.error('Error sending message:', error);
-    });
+      .then(response => response.json())
+      .then(data => {
+        console.log(`Message sent to ${chatId}:`, data);
+        // You can handle the response here if needed
+      })
+      .catch(error => {
+        console.error(`Error sending message to ${chatId}:`, error);
+      });
+  });
+
+  // Show alert
+  alert("Sizning ma'lumotlaringiz yozib olindi!");
+
+  // Clear the form
+  document.getElementById('name').value = '';
+  document.querySelector('input[name="whose"]:checked').checked = false;
+  document.querySelector('input[name="Kelishadimi"]:checked').checked = false;
+  document.getElementById('wish').value = '';
 
   // Prevent the form from submitting traditionally
   return false;
