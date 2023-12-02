@@ -953,7 +953,7 @@ img {
 }
 
 .form__input-name {
-  margin-bottom: 22px
+  margin-bottom: 22px;
 }
 
 .form__input {
@@ -1010,6 +1010,31 @@ img {
   border-radius: 10px;
   margin-bottom: 100px
 }
+
+.form__tg-button {
+  text-align: center;
+  font-size: 20px;
+  line-height: 22px;
+  color: #5f5F5F80;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+
+.fotm__telegram {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #e4a39e;
+  border-radius: 10px;
+  font-family: 'Tenor Sans';
+  font-size: 30px;
+  line-height: 20px;
+  padding: 10px 90px;
+  margin-bottom: 50px;
+  color: #e9a7a2;
+}
+
 
 .yakun {
   display: flex;
@@ -1607,7 +1632,8 @@ img {
   }
 
   .form__input-name,
-  .form__yesno {
+  .form__yesno,
+  .form__tg-button {
     font-size: 15px;
     margin-bottom: 10px
   }
@@ -1622,7 +1648,8 @@ img {
   }
 
   .form__submit,
-  .yakun__body {
+  .yakun__body,
+  .fotm__telegram {
     margin-bottom: 30px;
     font-size: 13px
   }
@@ -2135,7 +2162,8 @@ img {
   }
 
   .form__input-name,
-  .form__yesno {
+  .form__yesno,
+  .form__tg-button {
     font-size: 15px;
     margin-bottom: 10px
   }
@@ -2150,9 +2178,11 @@ img {
   }
 
   .form__submit,
-  .yakun__body {
+  .yakun__body,
+  .fotm__telegram {
     margin-bottom: 30px;
-    font-size: 18px
+    font-size: 18px;
+    padding: 10px 50px;
   }
 
   .yakun__body {
@@ -2650,7 +2680,8 @@ img {
   }
 
   .form__input-name,
-  .form__yesno {
+  .form__yesno,
+  .form__tg-button {
     font-size: 13px;
     margin-bottom: 10px
   }
@@ -2664,9 +2695,11 @@ img {
   }
 
   .form__submit,
-  .yakun__body {
+  .yakun__body,
+  .fotm__telegram {
     margin-bottom: 30px;
-    font-size: 13px
+    font-size: 13px;
+    padding: 10px 50px;
   }
 
   .yakun__body {
